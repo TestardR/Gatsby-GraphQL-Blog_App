@@ -1,6 +1,6 @@
 ---
 path: '/post-two'
-date: '2018-11-04'
+date: '2018-10-04'
 title: 'OWASP TOP 10 (2017) What to remember in a few words'
 time: '☕️☕️☕️☕️ 16 min read'
 summary: 'OWASP TOP 10 synthesis in crucial points: Definitions, Threats, Weaknesses, and Impacts.'
