@@ -1,6 +1,6 @@
 ---
 path: '/post-one'
-date: 'September 8, 2018'
+date: '2018-10-08'
 time: '☕️ 5 min read'
 title: 'My thoughts on cybersecurity for 2019'
 summary: 'Personal views on cybersecurity trends for web applications.'

@@ -1,6 +1,6 @@
 ---
 path: '/post-four'
-date: 'December 12, 2018'
+date: '2018-12-12'
 time: '☕️☕️ 8 min read'
 title: 'What about security specific to Javascript ?'
 summary: 'We take a look a security risks involved with managing Auth Tokens, Cache Storage and Service Workers, and Third-party Library Vulnerabilities.'
@@ -21,11 +21,13 @@ To circumvent this issue with cookies, we have other possibilities. Browser have
 To remember identities between sessions, we would use local storage. Session storage and local storage are pretty similar, except session storage is here for the lifetime of your browser. An auth token would persist even though you closed and opened another browser window.
 
 ## Cache Storage and Service Workers
+
 Service workers are very popular, they are appearing on all browsers, such as Chrome, Firefox, iOS, and Android, allowing developers to build progressive web applications. A service worker runs in the background of a web application and continues to run even when you don't have a browser open, background processing. It is used to do things like intercept network requests and store the response in the cache storage.
 
 Like session and local storages, cache storage can be accessed by anything that is running on your page context as it is a global object, including attacker scripts (XSS). To protect your cache storage, you have to run it through HTTPS or localhost, which is considered as a secure context.
 
 ## Third-party Library Vulnerabilities
+
 Many developers import libraries to their applications through CDN (Content Delivery Network) or services in the same manner. Owners of libraries can merely do whatever they want with them. Modify them without you knowing exactly what are the changes are about. A good way to deal with content that you import on your application is through CSP (Content Security Policy). After adding CSP to your application and setting it according to your needs. It will make sure that the libraries brought on your application have not been tempered with.
 
 NPM packages is a source of vulnerabilities. More and more, developers are downloading dependencies through NPM package manager to run their applications. People are downloading a lot of content through NPM, because its the fast track to building applications. But what happens when you can't trust what you downloaded? Snyk.io is a site you can look at to find out about vulnerabilities in your dependencies. Typosquatting is the practice of masquerading as another similar package to push malicious content. Be aware that you might download malicious dependencies mistyping for the one you were really looking for...

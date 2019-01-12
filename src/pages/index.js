@@ -35,14 +35,14 @@ const BlogPage = ({ data }) => (
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
           frontmatter {
             path
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             time
             summary
           }

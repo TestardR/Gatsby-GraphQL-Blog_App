@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from './header'
+import HeaderBlogPage from './header'
 import Footer from './footer'
+import About from '../components/about'
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -12,8 +13,10 @@ export default function Template({ data }) {
         maxWidth: 750,
       }}
     >
-      <Header />
-      <h1>{post.frontmatter.title}</h1>
+      <HeaderBlogPage />
+      <h1 style={{ fontSize: ` 2.5rem`, fontWeight: `800` }}>
+        {post.frontmatter.title}
+      </h1>
       <div style={{ paddingBottom: ` 1.5rem` }}>
         {post.frontmatter.date} • {post.frontmatter.time}
       </div>
@@ -21,9 +24,10 @@ export default function Template({ data }) {
         style={{ lineHeight: '1.5' }}
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
+      <hr />
+      <About />
       <Footer />
     </div>
-    
   )
 }
 
@@ -35,7 +39,7 @@ export const postQuery = graphql`
         path
         title
         time
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

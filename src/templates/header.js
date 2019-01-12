@@ -1,21 +1,24 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-const Header = () => {
+const HeaderBlogPage = () => {
   return (
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 750,
-        paddingTop: `2rem`,
-        paddingBottom: `1rem`,
-        color: 'green',
-        fontSize: '1.5rem',
-        fontWeight: '900',
-      }}
-    >
-      OverCoded
-    </div>
+    <Link to="/">
+      <h1
+        style={{
+          margin: `0 auto`,
+          maxWidth: 750,
+          paddingTop: `3rem`,
+          paddingBottom: `2rem`,
+          color: 'green',
+          fontSize: '2rem',
+          fontWeight: '900',
+        }}
+      >
+        OverCoded
+      </h1>
+    </Link>
   )
 }
 
-export default Header
+export default HeaderBlogPage
