@@ -20,7 +20,7 @@ Microservices describe a software development style that has grown in recent tre
 
 No universal meseare defines the perfect size of a microservice. Each microservice is supposed to do one thing and do it well. The micro refers to the scope of functionalities. Microservices are built upon a specific business capability, which can independently be deployed. It is known as "bounded context". One of the main goal for architects is to identify sub-domains within a project and divide it into microservices (user management, invoices, etc...).
 
-### About the sercice in "microservices"
+### About the service in "microservices"
 
 A service is an independently deployable component. It supposes interoperability through message based communication. It is known as service-oriented architecture (SOA).
 
@@ -28,7 +28,7 @@ A service is an independently deployable component. It supposes interoperability
 
 According to Martin Fowler (2019) "The microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms.".
 
-<sub>Fowler M. (2019), Microsercices Resource Guide, url : https://www.martinfowler.com/microservices/</sub>
+<sub>Fowler M. (2019), Microservices Resource Guide, url : https://www.martinfowler.com/microservices/</sub>
 
 According to Sam Newman (Thoughtworks) "Microservices are small, autonomus services that work together".
 
