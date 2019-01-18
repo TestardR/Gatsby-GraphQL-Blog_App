@@ -124,7 +124,7 @@ Access control, sometimes called authorization, is how a web application grants 
 
 ### How can you be attacked ?
 
-According to OWASP (2017), even though SAST and DAST tools wan detect the absence of access control, they cannot verify if it is functional when present. Access control is primarily detectable using manual means. However, it is possibly discoverable through automation for the absence of such in certain frameworks.
+According to OWASP (2017), even though SAST and DAST tools can detect the absence of access control, they cannot verify if it is functional when present. Access control is primarily detectable using manual means. However, it is possibly discoverable through automation for the absence of such in certain frameworks.
 
 ### Through which weaknesses ?
 
@@ -143,7 +143,7 @@ https://www.kiuwan.com/blog/owasp-top-10-2017-a5-broken-access-control/</sub>
 
 ### What is it ?
 
-Security Misconfiguration arises when Security settings are defined, implemented, and maintained. Good security requires a secureconfiguration defined and deployed for the application, web server, database server, and platform . Misconfiguration can include both errors in the installation of security, and the complete failure to install available security controls (Application Security Series, 2018).
+Security Misconfiguration arises when Security settings are defined, implemented, and maintained. Good security requires a secure configuration defined and deployed for the application, web server, database server, and platform. Misconfiguration can include both errors in the installation of security, and the complete failure to install available security controls (Application Security Series, 2018).
 
 ### How can you be attacked ?
 
@@ -196,7 +196,7 @@ url: https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)</sub>
 
 ### What is it ?
 
-According to Acutenix (2017) insecure Deserialization is a vulnerability which occurs when untrusted data is used to send malicious payloads upon it being deserialized
+According to Acutenix (2017) insecure Deserialization is a vulnerability which occurs when untrusted data is used to send malicious payloads upon it being deserialized.
 
 “Serialization refers to a process of converting an object into a format which can be persisted to disk (for example saved to a file or a datastore), sent through streams (for example stdout), or sent over a network.The format in which an object is serialized into, can either be binary or structured text (for example XML, JSON YAML…).
 
