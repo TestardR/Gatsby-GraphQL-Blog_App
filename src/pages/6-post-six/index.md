@@ -52,7 +52,7 @@ The problem with blank links is that the new page has access to the previous pag
 ### Noopener and Noreferrer on the rescue 
 
 Fortunately, we have two properties to protect ourselves from this.
-Use 'noopener' forbids the access to window.opener. Use 'noreferrer' for browsers that do not support noopener, so that they will not access referrer links. 
+Use 'noopener', it forbids the access to window.opener. Use 'noreferrer' for browsers that do not support noopener, so that they will not access referrer links. 
 
 ```
 <!-- Target page has acess to window.opener -->
@@ -98,9 +98,9 @@ Let's take a basic example on how to do an XSS attack. In this case, we could wr
 
 [Click Me](javascript:alert('Hello')) --> this is how you create a link in markdown
 
-[Click Me](javascriptalert&#58;('Hello'&#41;) --> same : => &#58; and ) => &#47;
+[Click Me](javascript&#58;alert('Hello'&#41;) --> same : => &#58; and ) => &#47;
 
-[Click Me](javascriptalert&#58this;('Hello'&#41;) --> same and might often work. 
+[Click Me](javascript&#58this;alert('Hello'&#41;) --> same and might often work. 
 
 Why ? We inserted a 'this' before the semi-colon ';', the browser decides to help and 
 finish the sentence &#58... "ah... and here goes your semi-colon ';'.". We inserted 'this' as 
