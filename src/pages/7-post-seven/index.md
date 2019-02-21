@@ -8,7 +8,7 @@ website and that website instructs the victim’s browser to visit a different
 URL, on a separate domain.'
 ---
 
-This article was done using my notes from a book titled WEB Hacking 101 written by Peter Yaworksi at in 2018.
+This article was done using my notes from a book titled WEB Hacking 101 written by Peter Yaworksi in 2018.
 
 <sub>Yaworksi P. (2018). Web Hacking 101, How To Make Money Hacking Ethically</sub>
 
