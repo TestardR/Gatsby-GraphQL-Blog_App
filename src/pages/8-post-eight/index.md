@@ -3,7 +3,7 @@ path: '/post-eight'
 date: '2019-02-19'
 time: '☕️☕️ 8 min read'
 title: 'Vulns #2: HTTP Parameter Pollution'
-summary: 'HPP, refers to manipulating how a website treats param-
+summary: 'HPP refers to manipulating how a website treats param-
 eters it receives during HTTP requests. The vulnerability occurs when parameters are
 injected and trusted by the vulnerable website, leading to unexpected behavior.'
 ---

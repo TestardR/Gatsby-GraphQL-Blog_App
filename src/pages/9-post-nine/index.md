@@ -3,7 +3,7 @@ path: '/post-nine'
 date: '2019-02-20'
 time: '☕️☕️☕️ 12 min read'
 title: 'Vulns #3: Cross-Site Request Forgery'
-summary: 'CSRF, attack occurs when an attacker can use an HTTP
+summary: 'CSRF attack occurs when an attacker can use an HTTP
 request to access a user’s information from another website, and use that information to
 act on the user’s behalf.'
 ---
