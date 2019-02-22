@@ -1,6 +1,6 @@
 ---
 path: '/post-ten'
-date: '2019-02-21'
+date: '2019-02-14'
 time: '☕️ 3 min read'
 title: 'Vulns #4: HTML Injection'
 summary: 'HTML injection is also sometimes referred to as virtual

@@ -1,6 +1,6 @@
 ---
 path: '/post-seven'
-date: '2019-02-18'
+date: '2019-02-10'
 time: '☕️ 3 min read'
 title: 'Vulns #1: Open Redirect Vulnerabilities'
 summary: 'An open redirect vulnerability occurs when a victim visits a URL for a given
