@@ -1,7 +1,7 @@
 ---
 path: '/post-twelve'
 date: '2019-02-16'
-time: '☕️☕️☕️ 16 min read'
+time: '☕️☕️ 8 min read'
 title: 'Vulns #6: Cross-Site Scripting'
 summary: 'Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into a trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.'
 ---
