@@ -1,18 +1,16 @@
 ---
-path: '/post-eleven'
-date: '2019-02-15'
-time: '☕️ 3 min read'
-title: 'Vulns #5: CRLF Injection'
-summary: 'A Carriage Return Line Feed (CRLF) Injection vulnerability occurs when an application
-does not sanitize user input correctly and allows for the insertion of carriage returns
-and line feeds denote line breaks and have special significance.'
+path: '/post-twelve'
+date: '2019-02-16'
+time: '☕️☕️☕️ 16 min read'
+title: 'Vulns #6: Cross-Site Scripting'
+summary: 'Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into a trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.'
 ---
 
 This article was done using my notes from a book titled WEB Hacking 101 written by Peter Yaworksi in 2018.
 
 <sub>Yaworksi P. (2018). Web Hacking 101, How To Make Money Hacking Ethically</sub>
 
-## What are CRLF injections ?
+## What are HTML injections ?
 
 As said in the summary, Carriage Return Line Feed (CRLF) Injection vulnerability occurs when an application
 does not sanitize user input correctly and allows for the insertion of carriage returns and line feeds denote line breaks and have special significance.
