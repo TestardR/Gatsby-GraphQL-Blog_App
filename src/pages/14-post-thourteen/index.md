@@ -53,7 +53,7 @@ mysql_query($query);
 
 ```
 
-The code uses $_GET[] to access the search value from the URL parameters specified
+The code uses $_ GET to access the search value from the URL parameters specified
 between its brackets and stores the value in the $search variable. The parameter is then
 passed to the $q variable without any sanitization. The $q variable represents the query
 to execute and fetches all data from the users table where the search column matches
