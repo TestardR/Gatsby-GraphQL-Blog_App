@@ -35,7 +35,6 @@ table, for records where the ID column is equal to 1.
 
 ```
 SELECT name FROM users WHERE id = 1;
-
 ```
 
 Many websites rely on databases to store information and to use that information to
@@ -50,7 +49,6 @@ after a user visits the URL https://www.google.com?search=hello
 $search = $_GET['search'];
 $q = "SELECT * FROM users WHERE search = '$search' ";
 mysql_query($query);
-
 ```
 
 The code uses $_ GET to access the search value from the URL parameters specified
@@ -69,7 +67,6 @@ https://www.google.com?search=test' OR 1='1,
 the executed query is :
 
 $query = "SELECT * FROM users WHERE name = 'test' OR 1='1' ";
-
 ```
 
 If the injected query didn’t include an opening single quote, the hanging quote would have caused SQL syntax errors, which
