@@ -4,7 +4,7 @@ date: '2019-03-01'
 time: '☕️ 2 min read'
 title: 'Vulns #12: Memory'
 summary: 'Buffer Overflows and Memory Corruptions are two attacks in the area of
-memory. They lead both lead to erractic program behaviour.'
+memory. They both lead to erractic program behaviour.'
 ---
 
 This article was done using my notes from a book titled WEB Hacking 101 written by Peter Yaworksi in 2018.
