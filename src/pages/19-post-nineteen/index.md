@@ -1,8 +1,8 @@
 ---
 path: '/post-twenty'
-date: '2019-03-06'
-time: '☕️☕️ 10 min read'
-title: 'Algo #2: Fibonnaci Series'
+date: '2019-03-03'
+time: '☕️☕️☕️ 13 min read'
+title: 'Algo #2: Fibonnaci Series & Memoization'
 summary: 'In this serie on Javascript, we will take a look at how to solve the Fibonnacie series.'
 ---
 
@@ -62,18 +62,28 @@ function fib(n) {
 
 As a mean to drastically decrease time/complexity, we can implement what is known as "memoization".
 
-On Wikipedia, we can read that memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.<br>
-Read: https://en.wikipedia.org/wiki/Memoization
+Memoization consists in storing the arguments of each function call along with the result. If the function is called again with the same arguments,
+it will return the precomputed result, rather than running the function again.
 
 ```
-Solution 2 bis:
+Solution 3:
+
+function slowFib(n) {
+    // as the first two values are 0 and 1
+   if(n < 2) return n;
+
+    // use recursion to obtain the fibonnaci number
+   return slowFib(n -1) + slowFib(n - 2);
+
+}
 
 function memoize(fn) {
 
-    // Store calls to fast version and respective results
+    // store calls and respective results
     const cache = {};
 
-    // assign the arguments given to fib() to an array
+    // faster function, we use the spread operator in case we receive multiple arguments
+    // the arguments will be assigned as an array to this function
     return function(...args) {
 
         // if a result has already been registered, return it
@@ -81,17 +91,20 @@ function memoize(fn) {
             return cache[args];
         }
 
-        const result = fn.apply(this, args); // here it means fn(args);
+        // whenever we call another function receiving an array, we have to use apply
+        const result = fn.apply(this, args);
 
         // at the key args, store the result we just created
         cache[args] = result;
+
+        // send the result
         return result;
 
     }
 
 }
 
-fib = memoize(fib);
+fib = memoize(slowFib);
 
 
 
