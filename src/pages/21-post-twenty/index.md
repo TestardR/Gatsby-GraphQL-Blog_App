@@ -21,6 +21,10 @@ What is the most common character in the string ?<br>
 Does string A have the same characters as string B (is it an anagram) ?<br>
 Does the given string have any repeated characters in it ?
 
+To store the number of appearance of each character, we will use an object.
+For each character, we will count the number of times it appears and assign it a value to its key.<br>
+As such, { a: 1, b: 2, z: 6}, finally we will return the key for the highest value (z).
+
 ```
 function maxChar(str){
     let charMap = {};
