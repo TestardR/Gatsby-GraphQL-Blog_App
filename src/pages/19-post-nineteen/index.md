@@ -55,7 +55,7 @@ function fib(n) {
 }
 
 // This solution is not efficient. Its time complexity is exponential.
-// The higher is n, the greater is the number of functions it has to run to come
+// The higher is n, the greater is the number of function calls it has to run to come
 // with the right answer.
 
 ```
