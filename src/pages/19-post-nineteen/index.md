@@ -1,125 +1,97 @@
 ---
-path: '/post-nineteen'
+path: '/post-twenty'
 date: '2019-03-06'
-time: '☕️ 2 min read'
-title: 'Algo #1: reverseString(), palindrome(), reverseInt()'
-summary: 'In this serie on Javascript, we will take a look at how reverse data within functions.'
+time: '☕️☕️ 10 min read'
+title: 'Algo #2: Fibonnaci Series'
+summary: 'In this serie on Javascript, we will take a look at how to solve the Fibonnacie series.'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
 
-## reverseString()
+## The Fibonnacie series
 
-Given a string, we want a function able to return a new string with the reversed order of characters
+Create a function that prints the n-th entry in the fibonacci series.
+The fibonacci series is an ordering of numbers where each number is the sum of the preceeding two.
+
+For example, the sequence [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] forms the first ten entries of the fibonacci series.<br>
 
 For example:<br>
-reverse('apple') === 'leppa'<br>
-reverse('hello') === 'olleh'<br>
-reverse('Greetings!') === '!sgniteerG'
+fib(4) === 3;
 
 ```
 Solution 1:
 
-function reverseString(str) {
-    return str
-            .split('') // turns str into an array ['a','p','p','l','e']
-            .reverse() // ['e', 'l', 'p', 'p', 'a']
-            .joint(''); // 'leppa'
-}
+function fib(n) {
 
-```
+    // let's set an array and hardcode the first two values
+    // we can't compute them as they don't have n-2 and n-1 values.
+    const result = [0, 1];
 
-```
-Solution 2:
+    // we want to start our loop from the third value in our array
+    // as the two previous one are already computed
+    for (let i = 2; i <=n ; i++) {
 
-function reverseString(str) {
-    let reversed = '';
+        const a = result[n - 1];
+        const b = result[n - 2];
 
-    // this loop goes through each character of our string
-    // it concatenates each character to our empty string
-    for(let char of str) {
-        reversed = reversed + char;
+        // lets add to our array the next fibonnaci number
+        result.push(a + b);
     }
 
-    return reversed;
+    return result[n];
 }
-
-```
-
-```
-Solution 3:
-
-function reverseString(str) {
-
-    // reduce takes all the value of an array (str.split(''))
-    // and condensed them into one single value (reversed)
-    // add empty '' at the end as it is our starting point
-    return str.split('').reduce((reversed, char) => reversed + char, '');
-
-}
-
-```
-
-## palindrome()
-
-Given a string, we want a function that returns true if the string is a palindrome or false if it is not.
-Palindromes are strings that form the same word if it is reversed. Do include spaces and punctuation in determining if the string is a palindrome.
-
-For example:<br>
-palindrome("abba") === true<br>
-palindrome("abcdefg") === false
-
-```
-Solution 1:
-
-function palindrome(str) {
-
-    let reverse = str
-                    .split('')
-                    .reverse()
-                    .join('');
-
-    return reverse === str;
-}
-
 ```
 
 ```
 Solution 2:
 
-// This solution is less efficient than the previous one. W
-// We will iterate through each of the characters
-// and compare them to the opposite one in the string
+function fib(n) {
+    // as the first two values are 0 and 1
+   if(n < 2) return n;
 
+    // use recursion to obtain the fibonnaci number
+   return fib(n -1) + fib(n - 2);
 
-function palindrome(str) {
-
-    return str.split('').every((char, i) => char === str[str.length - 1 - i]);
 }
 
-// A more efficient answer would only compare half of the string to the other half.
+// This solution is not efficient. Its time complexity is exponential.
+// The higher is n, the greater is the number of functions it has to run to come
+// with the right answer.
 
 ```
 
-## reverseInt()
+As a mean to drastically decrease time/complexity, we can implement what is known as "memoization".
 
-Given an integer, we want a function that returns an integer that is the reverse
-
-For example:<br>
-reverseInt(15) === 51<br>
-reverseInt(981) === 189<br>
-reverseInt(500) === 5
+In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 
 ```
-function reverseInt(n) {
+Solution 2 bis:
 
-    let reverse = n
-                .toString() // the following method only work on strings
-                .split('')
-                .reverse()
-                .join('');
+function memoize(fn) {
 
-    return parseInt(reverse) * Math.sign(n); // This is the trick to get the sign
+    // Store calls to fast version and respective results
+    const cache = {};
+
+    // assign the arguments given to fib() to an array
+    return function(...args) {
+
+        // if a result has already been registered, return it
+        if(cache[args]) {
+            return cache[args];
+        }
+
+        const result = fn.apply(this, args); // here it means fn(args);
+
+        // at the key args, store the result we just created
+        cache[args] = result;
+        return result;
+
+    }
+
+    fib = memoize(fib);
+
 }
 
 ```
+
+Run our badly optimized function through memoize to get way better performances.
