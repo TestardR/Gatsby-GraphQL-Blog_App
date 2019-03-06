@@ -1,5 +1,5 @@
 ---
-path: '/post-nineteen'
+path: '/post-eighteen'
 date: '2019-03-01'
 time: '☕️ 2 min read'
 title: 'Vulns #12: Memory'
