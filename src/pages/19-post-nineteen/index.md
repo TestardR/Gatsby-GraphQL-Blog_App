@@ -62,7 +62,8 @@ function fib(n) {
 
 As a mean to drastically decrease time/complexity, we can implement what is known as "memoization".
 
-In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+On Wikipedia, we can read that memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.<br>
+Read: https://en.wikipedia.org/wiki/Memoization
 
 ```
 Solution 2 bis:
@@ -88,9 +89,11 @@ function memoize(fn) {
 
     }
 
-    fib = memoize(fib);
-
 }
+
+fib = memoize(fib);
+
+
 
 ```
 
