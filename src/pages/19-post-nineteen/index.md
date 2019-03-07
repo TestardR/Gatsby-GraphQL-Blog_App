@@ -104,8 +104,9 @@ function memoize(fn) {
 
 }
 
-fib = memoize(slowFib());
+fib = memoize(slowFib);
 
+console.log(fib(15));
 
 
 ```
