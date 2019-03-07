@@ -104,7 +104,7 @@ function memoize(fn) {
 
 }
 
-fib = memoize(slowFib);
+fib = memoize(slowFib());
 
 
 

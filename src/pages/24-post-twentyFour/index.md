@@ -1,9 +1,9 @@
 ---
-path: '/post-twentyThree'
-date: '2019-03-06'
+path: '/post-twentyFour'
+date: '2019-03-07'
 time: '☕️ 2 min read'
-title: 'Algo #5: arrayChunk()'
-summary: 'In this serie on Javascript, we will take a look a how to chunk arrays using for ... of loops and slice()'
+title: 'Algo #6: blabla()'
+summary: 'In this serie on Javascript, we will take a look a how to chunk arrays.'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
