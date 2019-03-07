@@ -1,5 +1,5 @@
 ---
-path: '/post-nineteen'
+path: '/post-twenty'
 date: '2019-03-02'
 time: '☕️☕️ 10 min read'
 title: 'Algo #1: reverseString(), palindrome(), reverseInt()'

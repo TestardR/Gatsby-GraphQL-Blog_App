@@ -1,5 +1,5 @@
 ---
-path: '/post-twenty-one'
+path: '/post-twentyTwo'
 date: '2019-03-05'
 time: '☕️ 2 min read'
 title: 'Algo #4: fizzBuzz()'

@@ -1,5 +1,5 @@
 ---
-path: '/post-twenty-two'
+path: '/post-twentyOne'
 date: '2019-03-04'
 time: '☕️ 3 min read'
 title: 'Algo #3: maxChar()'

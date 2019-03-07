@@ -1,5 +1,5 @@
 ---
-path: '/post-twenty'
+path: '/post-nineTeen'
 date: '2019-03-03'
 time: '☕️☕️☕️ 13 min read'
 title: 'Algo #2: Fibonnaci Series & Memoization'
