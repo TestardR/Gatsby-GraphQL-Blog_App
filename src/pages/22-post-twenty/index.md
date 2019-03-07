@@ -3,7 +3,7 @@ path: '/post-twenty-one'
 date: '2019-03-05'
 time: '☕️ 2 min read'
 title: 'Algo #4: fizzBuzz()'
-summary: 'In this serie on Javascript, we will find take a look a the modulo operator'
+summary: 'In this serie on Javascript, we will take a look a the modulo operator'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
