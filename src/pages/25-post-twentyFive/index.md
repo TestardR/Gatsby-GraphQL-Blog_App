@@ -1,9 +1,9 @@
 ---
 path: '/post-twentyFive'
 date: '2019-03-08'
-time: '☕️ 2 min read'
+time: '☕️☕️ 8 min read'
 title: 'Algo #7: steps()'
-summary: 'In this Javascript serie, we will take a look at how building steps'
+summary: 'In this Javascript serie, we will take a look at how to build steps'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
