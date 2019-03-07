@@ -3,7 +3,7 @@ path: '/post-nineTeen'
 date: '2019-03-03'
 time: '☕️☕️☕️ 13 min read'
 title: 'Algo #2: Fibonnaci Series & Memoization'
-summary: 'In this serie on Javascript, we will take a look at how to solve the Fibonnacie series.'
+summary: 'In this serie on Javascript, we will take a look at how to solve the Fibonnacie series and implement memoization.'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/

@@ -1,7 +1,7 @@
 ---
 path: '/post-twentyThree'
 date: '2019-03-06'
-time: '☕️ 2 min read'
+time: '☕️ 3 min read'
 title: 'Algo #5: arrayChunk()'
 summary: 'In this serie on Javascript, we will take a look a how to chunk arrays using for ... of loops and slice()'
 ---

@@ -1,7 +1,7 @@
 ---
 path: '/post-twentyOne'
 date: '2019-03-04'
-time: '☕️ 3 min read'
+time: '☕️☕️ 8 min read'
 title: 'Algo #3: maxChar(), anagrams()'
 summary: 'In this serie on Javascript, we will find ways to get the most commonly used character in a string'
 ---

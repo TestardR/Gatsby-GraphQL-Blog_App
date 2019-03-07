@@ -1,7 +1,7 @@
 ---
 path: '/post-twentyFour'
 date: '2019-03-07'
-time: '☕️ 2 min read'
+time: '☕️ 3 min read'
 title: 'Algo #6: capitalize()'
 summary: 'In this serie on Javascript, we will take a look a how to capitalize the first letter of each word in a sentence'
 ---
