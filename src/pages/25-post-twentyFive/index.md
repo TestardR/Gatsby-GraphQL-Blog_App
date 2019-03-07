@@ -1,8 +1,8 @@
 ---
 path: '/post-twentyFour'
-date: '2019-03-07'
+date: '2019-03-08'
 time: '☕️ 2 min read'
-title: 'Algo #6: WIP'
+title: 'Algo #7: WIP'
 summary: ''
 ---
 
