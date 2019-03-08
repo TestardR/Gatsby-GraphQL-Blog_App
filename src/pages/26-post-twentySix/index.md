@@ -1,7 +1,7 @@
 ---
 path: '/post-twentySix'
 date: '2019-03-09'
-time: '☕️ 2 min read'
+time: '☕️☕️☕️ 12 min read'
 title: 'Algo #8: pyramid()'
 summary: 'In this Javascript serie, we will take a look at how to build two sided steps. A pyramid !'
 ---
