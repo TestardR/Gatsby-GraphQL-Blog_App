@@ -19,7 +19,7 @@ pyramid(2)<br>
 ' # '<br>
 '###'<br>
 pyramid(3)<br>
-' # ' // there a 5 characters in total<br>
+' # ' // there are 5 characters per row<br>
 ' ### '<br>
 '#####'
 
