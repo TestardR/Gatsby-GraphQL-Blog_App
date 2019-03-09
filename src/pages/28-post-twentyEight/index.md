@@ -1,7 +1,7 @@
 ---
 path: '/post-twentyEight'
 date: '2019-03-11'
-time: '☕️☕️ 8 min read'
+time: '☕️☕️☕️ 12 min read'
 title: 'Algo #10: The Queue and weave()'
 summary: 'In this Javascript serie, we will take a look at a not build in data structure known as Queue, and then play around with it'
 ---
