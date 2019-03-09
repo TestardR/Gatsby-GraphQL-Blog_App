@@ -2,21 +2,26 @@
 path: '/post-twentyEight'
 date: '2019-03-11'
 time: '☕️☕️ 8 min read'
-title: 'Algo #10: The Queue'
-summary: 'In this Javascript serie, we will take a look at a not build in data structure known as Queue'
+title: 'Algo #10: The Queue and weave()'
+summary: 'In this Javascript serie, we will take a look at a not build in data structure known as Queue, and then play around with it'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
 
 ## The Queue
 
-Create a queue data structure. The queue should be a class with methods 'add' and 'remove'.
-Adding to the queue should store an element until it is removed.
+Create a queue data structure.<br>
+
+1. The queue should be a class with methods 'add' and 'remove'.
+   Adding to the queue should store an element until it is removed.
 
 For example:<br>
 const q = new Queue();<br>
 q.add(1);<br>
 q.remove(); // returns 1;
+
+2. Implement a 'peek' method in this Queue class. Peek should return the last element (the next one to be returned) from the queue _without_
+   removing it.
 
 ```
 class Queue {
@@ -41,6 +46,58 @@ class Queue {
 
     }
 
+    peek() {
+
+    return this.data[this.data.length - 1];
+
+    }
+
 }
 
+```
+
+## weave()
+
+Weave receives two queues as arguments and combines the contents of each into a new, third queue.
+The third queue should contain the _alterating_ content of the two queues. The function should handle
+queues of different lengths without inserting 'undefined' into the new one.
+
+_Do not_ access the array inside of any queue, only use the 'add', 'remove', and 'peek' functions.
+
+For example:<br>
+const queueOne = new Queue();<br>
+queueOne.add(1);<br>
+queueOne.add(2);<br>
+const queueTwo = new Queue();<br>
+queueTwo.add('Hi');<br>
+queueTwo.add('There');<br>
+const q = weave(queueOne, queueTwo);<br>
+q.remove() // 1<br>
+q.remove() // 'Hi'<br>
+q.remove() // 2<br>
+q.remove() // 'There'
+
+```
+function weave(sourceOne, sourceTwo) {
+
+    const q = new Queue();
+
+    while (sourceOne.peek() || sourceTwo.peek()) {
+
+        if (sourceOne.peek()) {
+
+            q.add(sourceOne.remove());
+
+        }
+
+        if (sourceTow.peek()) {
+
+            q.add(sourceTwo.remove());
+        }
+
+    }
+
+    return q;
+
+}
 ```
