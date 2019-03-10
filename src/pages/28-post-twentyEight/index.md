@@ -3,7 +3,7 @@ path: '/post-twentyEight'
 date: '2019-03-11'
 time: '☕️☕️☕️ 12 min read'
 title: 'Algo #10: The Queue and weave()'
-summary: 'In this Javascript serie, we will take a look at a not build in data structure known as Queue, and then play around with it'
+summary: 'In this Javascript serie, we will take a look at a not built in data structure known as Queue, and then play around with it'
 ---
 
 This article was done using my notes from Stephen Grider's amazing course on algorithms and data structures, available at : https://www.rallycoding.com/
