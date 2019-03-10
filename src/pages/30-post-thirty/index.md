@@ -80,3 +80,191 @@ class LinkedList {
 
 }
 ```
+
+### size()
+
+Let's create a function that returns the number of nodes in the linked list.
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.insertFirst('c');<br>
+list.size(); // returns 3
+
+```
+class LinkedList {
+
+  constructor() {
+
+    this.head = null;
+
+  }
+
+   insertFirst(data) {
+
+      this.head = new Node(data, this.head);
+
+  }
+
+  size() {
+
+      let count = 0;
+
+      let node = this.head;
+
+      while(node) {
+
+          counter++;
+
+          node = node.next;
+
+      }
+
+      return counter;
+
+  }
+
+}
+```
+
+### getFirst()
+
+Let's create a function that returns the first node of the linked list.
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.getFirst(); // returns Node instance with data 'a'
+
+```
+class LinkedList {
+
+  constructor() {
+
+    this.head = null;
+
+  }
+
+   insertFirst(data) {
+
+      this.head = new Node(data, this.head);
+
+  }
+
+    getFirst() {
+
+        return this.head;
+
+    }
+
+}
+```
+
+### getLast()
+
+Let's create a function that returns the last node of the linked list
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.getLast(); // returns node with data 'a'
+
+```
+class LinkedList {
+
+  constructor() {
+
+    this.head = null;
+
+  }
+
+   insertFirst(data) {
+
+      this.head = new Node(data, this.head);
+
+  }
+
+    getLast() {
+
+        if(!this.head) {
+
+            return null;
+
+        }
+
+        let node = this.head;
+
+        while(node) {
+
+            if(!node.next) {
+
+                return node;
+
+            }
+
+            node = node.next;
+
+        }
+
+        return node;
+
+    }
+
+}
+```
+
+### clear()
+
+Let's build a function that empties the linked list of any nodes.
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.clear();<br>
+list.size(); // returns 0
+
+```
+class LinkedList {
+
+  constructor() {
+
+    this.head = null;
+
+  }
+
+   insertFirst(data) {
+
+    this.head = new Node(data, this.head);
+
+  }
+
+  size() {
+
+    let counter = 0;
+
+    let node = this.head;
+
+    while (node) {
+
+      counter++;
+
+      node = node.next;
+
+    }
+
+    return counter;
+
+  }
+
+    clear() {
+
+    this.head = null;
+
+    }
+
+}
+```
