@@ -436,3 +436,46 @@ getAt(index) {
 }
 
 ```
+
+### removeAt()
+
+Let's build a function that removes node at the provided index.
+
+const list = new List();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.insertFirst('c');<br>
+list.removeAt(1);<br>
+list.getAt(1); // returns node with data 'a'
+
+```
+removeAt(index) {
+
+  if (!this.head) {
+
+      return null;
+
+    }
+
+    if (index === 0) {
+
+    this.head = this.head.next;
+
+    return;
+
+  }
+
+  const previous = this.getAt(index - 1);
+
+    // if the index is out of bounce or if the index is the last one
+    if (!previous || !previous.next) {
+
+      return;
+
+    }
+
+    // jump over one node (the one that we want to remove)
+    previous.next = previous.next.next;
+
+}
+```
