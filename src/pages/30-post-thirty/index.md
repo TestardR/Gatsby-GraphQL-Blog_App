@@ -1,7 +1,7 @@
 ---
 path: '/post-thirty'
 date: '2019-03-13'
-time: '☕️☕️☕️☕️ 20 min read'
+time: '☕️☕️☕️☕️ 23 min read'
 title: 'Algo #12: linkedlist'
 summary: 'In this Javascript serie, we will take a look at a not built in data structure known as linkedlist, and play around with it'
 ---
@@ -519,6 +519,7 @@ list.getAt(1); // returns node with data 'Hi'
 
     // make previous look at our newlyt created node
     previous.next = node;
+
   }
 
 ```
