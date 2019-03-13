@@ -268,3 +268,33 @@ class LinkedList {
 
 }
 ```
+
+### removeFirst()
+
+Let's build a function that removes the first node of the linked list. The list's head should now be the second element.
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.removeFirst();<br>
+list.getFirst(); // returns node with data 'a'
+
+```
+  removeFirst() {
+
+    if (!this.head) {
+
+      return;
+
+    }
+
+    this.head = this.head.next;
+
+  }
+
+```
+
+### removeLast()
+
+let's build a function that removes the last node of the chain.
