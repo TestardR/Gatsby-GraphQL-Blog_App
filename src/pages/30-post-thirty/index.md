@@ -298,3 +298,45 @@ list.getFirst(); // returns node with data 'a'
 ### removeLast()
 
 let's build a function that removes the last node of the chain.
+
+For example:<br>
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.removeLast();<br>
+list.size(); // returns 1<br>
+list.getLast(); // returns node with data of 'b'
+
+```
+removeLast() {
+
+  if (!this.head) {
+
+    return;
+
+  }
+
+  if (!this.head.next) {
+
+    this.head = null;
+
+    return;
+
+  }
+
+  let previous = this.head;
+  let node = this.head.next;
+
+  while(node.next) {
+
+    previous = node;
+
+    node = node.next;
+
+  }
+
+  previous.next = null;
+
+}
+
+```
