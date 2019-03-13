@@ -479,3 +479,46 @@ removeAt(index) {
 
 }
 ```
+
+### insertAt()
+
+Let's build a function that inserts a new node at provided index. If index is out of bounds, add the node to the end of the list.
+
+For example:<br>
+const list = new List();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.insertFirst('c');<br>
+list.insertAt('Hi', 1)<br>
+list.getAt(1); // returns node with data 'Hi'
+
+```
+ insertAt(data, index) {
+
+    if (!this.head) {
+
+      this.head = new Node(data);
+
+      return;
+
+    }
+
+    if (index === 0) {
+
+      // (data, this.head) we make a new node that has a next property of the current head
+
+      this.head = new Node(data, this.head);
+
+      return;
+
+    }
+
+    const previous = this.getAt(index - 1) || this.getLast();
+    // create a new node point at the following node (same as previous)
+    const node = new Node(data, previous.next);
+
+    // make previous look at our newlyt created node
+    previous.next = node;
+  }
+
+```
