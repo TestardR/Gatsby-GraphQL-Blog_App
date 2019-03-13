@@ -340,3 +340,99 @@ removeLast() {
 }
 
 ```
+
+### insertLast()
+
+Let's build a function that inserts a new node with provided data at the end of the chain.
+
+const list = new LinkedList();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.insertLast('c');<br>
+list.getLast(); // returns node with data 'C'
+
+```
+insertLast(data) {
+
+  const last = this.getLast();
+
+  if (last) {
+
+    last.next = new Node(data);
+
+  } else {
+
+    this.head = new Node(data);
+
+  }
+
+}
+
+
+As a reminder :
+
+   getLast() {
+
+        if(!this.head) {
+
+            return null;
+
+        }
+
+        let node = this.head;
+
+        while(node) {
+
+            if(!node.next) {
+
+                return node;
+
+            }
+
+            node = node.next;
+
+        }
+
+        return node;
+
+    }
+
+
+```
+
+### getAt()
+
+Let's build a function that returns the node at the provided index.
+
+For example:<br>
+const list = new List();<br>
+list.insertFirst('a');<br>
+list.insertFirst('b');<br>
+list.insertFirst('c');<br>
+list.getAt(1); // returns node with data 'b'
+
+```
+getAt(index) {
+
+  let counter = 0;
+  let node = this.head;
+
+  while (node) {
+
+    if(counter === index) {
+
+      return node;
+
+    }
+
+    counter++;
+
+    node = node.next;
+
+  }
+
+  return null;
+
+}
+
+```
