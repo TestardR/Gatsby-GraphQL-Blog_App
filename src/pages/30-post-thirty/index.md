@@ -523,3 +523,39 @@ list.getAt(1); // returns node with data 'Hi'
   }
 
 ```
+
+### forEach()
+
+Let's build a function that calls the provided function with every node of the chain.
+
+For example:<br>
+const list = new List();<br>
+
+list.insertLast(1);<br>
+list.insertLast(2);<br>
+list.insertLast(3);<br>
+list.insertLast(4);<br>
+
+list.forEach(node => {<br>
+node.data += 10;<br>
+});<br>
+list.getAt(0); // Returns node with data '11'
+
+```
+forEach(fn) {
+
+  let node = this.head;
+  let counte = 0;
+
+  while(node) {
+
+    fn(node, counter);
+
+    node = node.next;
+
+    counter++;
+
+  }
+
+}
+```
