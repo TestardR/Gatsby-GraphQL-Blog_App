@@ -559,3 +559,43 @@ forEach(fn) {
 
 }
 ```
+
+### for...of Loop
+
+Let's make our Linked List compatible as the subject of a 'for...of' loop.
+
+For example:<br>
+const list = new List();<br>
+
+list.insertLast(1);<br>
+list.insertLast(2);<br>
+list.insertLast(3);<br>
+list.insertLast(4);<br>
+
+for (let node of list) {<br>
+
+node.data += 10;<br>
+
+}<br>
+
+node.getAt(1); // returns node with data 11
+
+```
+// Function generator with a key of Symbol.iterator
+// It is a default iterator for the use of for...of loop
+*[Symbol.iterator]() {
+
+    let node = this.head;
+
+    while (node) {
+
+      // for every step, yield the node value
+      yield node;
+
+      node = node.next;
+
+    }
+
+  }
+
+```

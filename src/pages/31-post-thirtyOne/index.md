@@ -1,7 +1,7 @@
 ---
 path: '/post-thirtyOne'
 date: '2019-03-14'
-time: '☕️☕️☕️ ☕️ 18 min read'
+time: '☕️☕️☕️ 13 min read'
 title: 'Generators in Javascript'
 summary: 'Take a look an interesting and not so known ES6 feature Generators'
 ---
