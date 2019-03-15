@@ -123,7 +123,7 @@ for (let value of generator) {
 values; // It returns [ 1, 2, 3, 4, 5, 6, 7 ];
 ```
 
-We can observer another feature of genetarors. We can nest generators to delegate behaviors. Calling numbers(), we went from yield 1, yield 2 to yield*. yield* specifically means we are about to call a new generator.
+We can observe another feature of genetarors. We can nest generators to delegate behaviors. Calling numbers(), we went from yield 1, yield 2 to yield\*. yield\* specifically means we are about to call a new generator.
 
 ### Our fourth example on a typical Tree
 
@@ -145,6 +145,7 @@ class Tree {
 
     for (let child of this.children) {
 
+    // here is a use of recursive generators
       yield* child.printValues();
 
     }
@@ -167,5 +168,5 @@ values; // [ 1, 2, 4, 3 ]
 ```
 
 On calling \*printValues() on a single node in the tree, I will first yield the node value (yield this.value);.
-The next time, I call next on it, I will enter our for-loop and delegate through other generators (yield\* child.printValues()).
+The next time, I call next on it, I will enter our for-loop and delegate to other generators (yield\* child.printValues()).
 For each child of the top node, I will walk through its children and call printValues(). Finally, on calling values, we get [ 1, 2, 4, 3 ].
