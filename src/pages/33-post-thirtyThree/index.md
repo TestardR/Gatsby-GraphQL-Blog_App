@@ -1,6 +1,6 @@
 ---
 path: '/post-thirtyThree'
-date: '2019-08-31'
+date: '2019-08-20'
 time: '☕️ 5 min read'
 title: 'JS #1: What are Scopes ?'
 summary: 'We take a look at how scope works.'
