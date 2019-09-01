@@ -54,7 +54,7 @@ function foo() {
 
 var baz = foo();
 
-baz // 2
+baz; // 2
 
 ```
 
