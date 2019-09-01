@@ -1,59 +1,56 @@
 ---
-path: '/post-thirtyFive'
-date: '2019-08-22'
-time: '☕️ 2 min read'
-title: 'JS #3: Function Versus Block Scope'
-summary: 'We take a look at function scopes and block scopes'
+path: '/post-thirtySix'
+date: '2019-08-23'
+time: '☕️ 1 min read'
+title: 'JS #4: Hoisting'
+summary: 'We take a look at what is known as hoisting'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, Scope and Closures. It is a part of a very well written serie on Javascript that everyone developer should take a look at.
 
-## Function and Block Scopes ?
+## Hoisting ?
 
-Scope consists of a series of "bubbles" that each act as a container, in which identifiers (variables, functions) are declared. These "bubbles" nest inside each other, and this nesting is defined at author time.
+As Kyle Simpsons exposes, we are tempted to look at **var a = 2;** as one statement, but the JavaScript engine does not see it that way. It sees **var a** and **a = 2** as two separate statements, the first one a compiler-phase task, and the seconde one an execution-phase task.
 
-### Function Scope
+What this leads to is that all declarations in a scope, regardless of where they appear, are processed first before the code itself is executed. You can think of this as declarations (variables and functions) being "moved" to the top of their respective scopes, which is called **hoisting**.
 
-Functions are the most commont unit of scope in JavaScript. Variables and functions that are declared inside another funciton are essentially "hidden" from any of the enclosing scopes, which is an intentional design principle of good software.
+Declarations themselves are hoisted, but assignments, even assigments of function expressions, are **not** hoisted.
 
 For example:
 
 ```
-var a = 2;
+var a;
+
+console.log( a ); // undefined
+
+a = 2;
+
+```
+
+or
+
+```
+foo(); // undefined
 
 function foo() {
 
-  var a = 3;
-
   console.log( a );
 
-}
-
-foo(); // 3
-
-console.log( a ); // 2
-
-```
-
-### Block Scope
-
-Block scope refers to the idea that variables and functions can belong to an arbitrary block (generally, any { .. } pair) of code, rather than only to the enclosing function.
-
-For example:
-
-```
-for ( var i=0; i<10; i++) {
-
-  console.log(i)
+  var a = 2;
 
 }
 
 ```
 
-Starting with ES3, the **try/catch** structure has block scope in the catch clause.
+See, function expressions are not hoisted, only function declarations :
 
-In ES6, the **let** keyword (a cousin to the **var** keyword) is introduced to allow declarations of variables in any arbitrary block of code. Readinf from [stackoverflow](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var), "var is scoped to the nearest function block and let is scoped to the nearest enclosing block, which can be smaller than a function block. Both are global if outside any block.". **if (..) { let a = 2; }** will declare a variable **a** that essentially hijacks the scope of **if's { .. }** block and attaches itself there.
+```
+foo(); // TypeError
 
-### The take away
+var foo = function bar() {
 
-Though some seem to believe so, lbock scope should not be taken as an outright replacement of **var** function scope. Both functionalities co-exist, and developers can and should use both function-scope and block-scope techniques where respectively appropriate to produce better, more readable/maintanable code.
+  // ...
+
+}
+
+```
