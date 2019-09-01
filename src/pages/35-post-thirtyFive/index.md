@@ -2,7 +2,7 @@
 path: '/post-thirtyFive'
 date: '2019-08-22'
 time: '☕️ 2 min read'
-title: 'JS #2: Function Versus Block Scope'
+title: 'JS #3: Function Versus Block Scope'
 summary: 'We take a look at function scopes and block scopes'
 ---
 
