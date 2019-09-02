@@ -2,7 +2,7 @@
 path: '/post-thirtySeven'
 date: '2019-08-25'
 time: '☕️☕️ 6 min read'
-title: 'JS #6: This keyword'
+title: 'JS #6: the This keyword'
 summary: 'We take a look at the This keyword'
 ---
 
@@ -62,8 +62,11 @@ function foo() {
 };
 
 var obj1 = {
+
   a: 2
+
 }
+
 
 var bar = foo.call( obj1 );
 
