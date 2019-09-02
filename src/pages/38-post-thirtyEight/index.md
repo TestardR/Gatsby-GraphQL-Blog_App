@@ -1,5 +1,5 @@
 ---
-path: '/post-thirtySeven'
+path: '/post-thirtyEight'
 date: '2019-08-25'
 time: '☕️☕️ 6 min read'
 title: 'JS #6: the This keyword'
