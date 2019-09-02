@@ -6,7 +6,7 @@ title: 'JS #2: Lexical Scope'
 summary: 'We take a look at how lexical scope works and how developers can cheat it.'
 ---
 
-This article was done using my notes from Kyles Simpson, 2014, Scope and Closures. It is a part of a very well written serie on Javascript that everyone developer should take a look at.
+This article was done using my notes from Kyles Simpson, 2014, Scope and Closures. It is a part of a very well written serie on Javascript that every developer should take a look at.
 
 ## Lexical Scope ?
 
