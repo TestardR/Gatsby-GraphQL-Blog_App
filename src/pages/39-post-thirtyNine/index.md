@@ -1,7 +1,7 @@
 ---
 path: '/post-thirtyNine'
 date: '2019-08-26'
-time: '☕️ 3 min read'
+time: '☕️☕️ 5 min read'
 title: 'JS #7: Object'
 summary: 'We take a look at Objects'
 ---
@@ -66,6 +66,8 @@ myObject.a; // 2
 ```
 
 Properties don't have to contain values. They can be be "accessor properties" as well, with getters/setters. They can also be either **enumerable** or not, which controls whether they show up in **for..in** loop iterations, for instance.
+
+### ES6 for..of and @@iterator
 
 You can also iterate over the values in data structures (arrays, objects, etc.) using the ES6 **for..of** syntax, which looks for either a built-in or custom **@@iterator** object consisting of a **next()** method advance through the data values one at a time.
 
