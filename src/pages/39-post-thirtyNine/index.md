@@ -1,102 +1,100 @@
 ---
-path: '/post-forty'
-date: '2019-08-27'
+path: '/post-thirtyNine'
+date: '2019-08-26'
 time: '☕️☕️ 5 min read'
-title: 'JS #7: "Class" Objects'
-summary: 'We take a look at classes'
+title: 'JS #7: Object'
+summary: 'We take a look at Objects'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, This & Object prototypes. It is a part of a very well written serie on Javascript that every developer should take a look at.
 
-## Classes
+## Object
 
-Classes are a design pattern. Many languages provide syntax that enables class-oriented programing or software design. JavaScript also has a similar syntax, but it behaves very differently from classes in many other languages.
+Objects in JavaScript have both a literal form (such as **var a = { .. }**) and a constructed form (such as **var a = new Array(..)**). This literal form is almost always preferred, but the constructed form offers, in some cases, more creations options.
 
-In traditional languages,"classes" mean copies.
+Objects are one of the six primitives types : **string, number, boolean, null, undefined, object**. Objects have subtypes, including **function**, and also can be behavior-specialized, like **[object Array]** as the internal label representing the array object subtype.
 
-### Instantiation & Inheritance
+Objects are collections of **key/value** pairs. The value can be accessed, via the **object.propName** or **object["propName"]** syntax. Whenever a property is accessed, the engine actually invokes the internal default **[ [ Get ] ]** operation (and **[ [ Put ] ]** for setting values), which not only looks for the property directly on the object, but will traverse the **[ [ Prototype ] ]** chain if not found.
 
-According to Kyle Simpson, when traditional classes are instantiated, a copy of behavior from class to instance occurs. When classes are inherited, a copy of behavior from parent to child occurs.
-
-Instances are constructed by a **constructor**.
-
-Consider the following pseudocode on class instantiation:
+Consider:
 
 ```
-class CoolGuy {
-  specialTrick = null
+var myObject: = {
 
-  CoolGuy( trick ) {
-
-    specialTrick = trick
-
-  }
-
-  showOff() {
-
-    output( "Here's my trick: ", specialTrick )
-
-  }
+  a: 2
 
 }
 
-Joe = new CoolGuy( "jumping rope" ) // call the constructor using new
+myObject.a; // 2
 
-Joe.showOff() // Here's my trick: jumping rope
-```
-
-Consider the following pseudocode on class inheritance:
+myObject["a"]; // 2
 
 ```
-class Vehicle {
 
-  engines = 1
+### Properties
 
-  ignition() {
+Properties have certain characteristics that can be controlled through property descriptors, such as writable and configurable. In addition, objects can have their mutability (and that of their properties) controlled to various levels of immutability using **Object.preventExtensions(..)**, **Object.seal(..)**, and **Object.freeze(..)**.
 
-    output( "Turning on my engine." );
+Consider:
 
-  }
+```
+var myObject = {
 
-  drive() {
+  a: 2
 
-    ignition();
+};
 
-    output( "Steering and moving forward!" )
+Object.getOwnPropertyDescriptor( myObject, "a" );
 
-  }
+// {
+//    value: 2,
+//    writable: true,
+//    enumerable: true,
+//    configurable: true
+// }
+
+Object.defineProperty( myObject, "a", {
+  value: 2,
+  writable: false, // not writable!
+  configurable: true,
+  enumerable: true
+})
+
+myObject.a = 3;
+
+myObject.a; // 2
+```
+
+Properties don't have to contain values. They can be be "accessor properties" as well, with getters/setters. They can also be either **enumerable** or not, which controls whether they show up in **for..in** loop iterations, for instance.
+
+### ES6 for..of and @@iterator
+
+You can also iterate over the values in data structures (arrays, objects, etc.) using the ES6 **for..of** syntax, which looks for either a built-in or custom **@@iterator** object consisting of a **next()** method advance through the data values one at a time.
+
+Consider:
+
+```
+var my Array = [1, 2, 3];
+
+for (var v of myArray) {
+
+  console.log( v );
 
 }
 
-class Car extends Vehicle {
-
-  wheels = 4
-
-  drive() {
-
-    inherited: drive()
-
-    output( "Rolling on all", wheels, " wheels!" )
-
-  }
-
-}
+// 1
+// 2
+// 3
 ```
 
-### Polymorphism
+Also consider:
 
-Polymorphism (here relative polymorphism) is the idea that any method can reference another method (of the same or different name) at a higher level of the inheritance hierarchy. In many languages, we use the keyword **super**, instead of the previous **inherited**.
+```
+var my Array = [1, 2, 3];
+var it = myArray[Symbol.iterator]();
 
-In JavaScript, it may imply a referential relative link from child to parent, but it is still just a result of copy behavior.
-
-### Mixins
-
-JavaScript does not automatically create copies (as classes would imply) between objects.
-
-According to Kyle Simpson, JavaScript's object mechanism does not automatically perform copy behavior when you inherit or instantiate. In other words, there are no "classes" to instantiate, only objects. Objects don't get copied to other objects, they get linked together. JavaScript developers fake the missing copy behavior of classes in using **mixins**.
-
-Both explicit and implicit mixin pattern is used to emulate class copy behavior. It unfortunately usually leads to "ugly and brittle syntax", which often results in code that is harder to understand and maintain.
-
-Explicit mixins are not exactly the same as class-copy behavior, since objects only have shared references duplicated, not the objects themselves...
-
-According to Kyle Simpson, in general, faking classes in JavaScript often sets more landmines for future coding than solving present problems.
+it.next(); // { value:1, done:false }
+it.next(); // { value:2, done:false }
+it.next(); // { value:3, done:false }
+it.next(); // { done:true }
+```

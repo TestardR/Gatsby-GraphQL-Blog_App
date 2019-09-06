@@ -1,8 +1,8 @@
 ---
 path: '/post-fortyOne'
-date: '2019-08-27'
+date: '2019-08-28'
 time: '☕️☕️ 5 min read'
-title: 'JS #8: Prototypes'
+title: 'JS #9: Prototypes'
 summary: 'We take a look at Prototypes'
 ---
 
