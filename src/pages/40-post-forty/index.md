@@ -2,7 +2,7 @@
 path: '/post-forty'
 date: '2019-08-27'
 time: '☕️☕️ 5 min read'
-title: 'JS #8: "Class" Objects'
+title: 'JS #8: "Class" Objects as a concept'
 summary: 'We take a look at classes'
 ---
 
