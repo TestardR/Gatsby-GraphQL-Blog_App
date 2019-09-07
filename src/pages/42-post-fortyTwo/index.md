@@ -3,7 +3,7 @@ path: '/post-fortyTwo'
 date: '2019-08-29'
 time: '☕️☕️ 8 min read'
 title: 'JS #10: Behavior Delegation & OLOO'
-summary: 'We take a look at Behavior Delegation and the Objects Linked to Other Objets programing'
+summary: 'We take a look at Behavior Delegation and the Objects Linked to Other Objets style of programing'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, This & Object prototypes. It is a part of a very well written serie on Javascript that every developer should take a look at.
