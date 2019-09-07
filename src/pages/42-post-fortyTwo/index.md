@@ -1,7 +1,7 @@
 ---
 path: '/post-fortyTwo'
 date: '2019-08-29'
-time: '☕️ 5 min read'
+time: '☕️☕️ 8 min read'
 title: 'JS #10: Behavior Delegation & OLOO'
 summary: 'We take a look at Behavior Delegation and the Objects Linked to Other Objets programing'
 ---
@@ -14,9 +14,48 @@ According to Kyle Simpson, classes and inheritance are a design pattern a develo
 
 Behavior delegation suggests objects as peers of each other, which delegate among themselves, rather than parent and child class relationships, JavaScript's [ [ Prototype ] ] mechanism is, by its very designed nature, a behavior delegation mechanism. When you design your code with objects only, not only does it simplify the syntax you use, but it can actually lead to simpler code architecture design.
 
-### Behavior Delegation
+### OLOO
 
 OLOO (objects linked to other objects) is a code style that creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [ [ Prototype ] ]-based behavior delegation.
+
+Let's use behavior delegation instead of classes. You first define an object called **Task**, and it has concrete behaviors on it that includes utility methods that various tasks can use. Then, for each task ('XYZ', 'ABC'), you define an object to hold that task-specific data/behavior. You link your task-specific object(s) to the Task utility object, allowing them to delegate to it when they need to.
+
+Consider the following example:
+
+```
+Task = {
+  setID: function(ID) {
+    this.id = ID;
+  }
+  outputID: function() {
+    console.log( this.id );
+  }
+
+};
+
+// make 'XYZ' delegate to 'Task'
+XYZ = Object.create( Task );
+
+XYZ.prepareTask = function(ID, Label) {
+
+  this.setID( ID );
+  this.label = Label;
+
+}
+
+XYZ.outputTaskDetails = function() {
+
+  this.outputID();
+  console.log( this.label );
+
+}
+
+// ABC = Object.create( Task );
+//ABC ... = ...
+
+```
+
+### Class and OLOO patterns comparison
 
 Consider the following typical class design pattern:
 
