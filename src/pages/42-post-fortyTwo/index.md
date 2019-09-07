@@ -1,7 +1,7 @@
 ---
 path: '/post-fortyTwo'
 date: '2019-08-29'
-time: '☕️ 2 min read'
+time: '☕️ 5 min read'
 title: 'JS #10: Behavior Delegation & OLOO'
 summary: 'We take a look at Behavior Delegation and the Objects Linked to Other Objets programing'
 ---
