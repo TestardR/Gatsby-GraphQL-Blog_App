@@ -1,60 +1,142 @@
 ---
-path: '/post-fortyFor'
-date: '2019-08-31'
-time: '☕️ 2 min read'
-title: 'JS #12: Natives'
-summary: 'We take a look at Natives.'
+path: '/post-fortySix'
+date: '2019-09-14'
+time: '☕️☕️ 10 min read'
+title: 'JS #14: Classes'
+summary: 'We take a look at preES6 and ES6 Classes.'
 ---
 
-This article was done using my notes from Kyles Simpson, 2015, Types & Grammar. It is a part of a very well written serie on Javascript that every developer should take a look at.
+This article was done using my notes from Kyles Simpson, 2016, ES6 & Beyond. It is a part of a very well written serie on Javascript that every developer should take a look at.
 
-## Natives
+## Classes
 
-Here is a list of the most commonly used natives:
+### Class
 
-```
-String()
+At the heart of the new ES6 class mechanism is the class keyword, which identifies a block where the contents define the members of a function's prototype.
 
-Number()
-
-Boolean()
-
-Array()
-
-Object()
-
-Function()
-
-RegExp()
-
-Date()
-
-Error()
-
-Symbol()
-```
-
-These are object wrappers we can set around primitive values. They are known as natives. These object wrappers serve a very important purpose. Primitive values don't have properties or methods, so to access **.length** or **.toString()** you need an object wrapper around the value.
+Consider:
 
 ```
-var a = new String("abc");
+class Foo {
 
-typeof a; // "object" ... not "String"
+    constructor(a, b) {
+        this.x = a;
+        this.y = b;
+    }
 
-a instanceof String // true
+    gimmeXY() {
+        return this.x * this.y;
+    }
 
-Object.prototype.toString.call( a ); // "[object String]"
-
+}
 ```
 
-Values that are **typeof** "objet" are tagged with an internal [ [ Class ] ] property. This property can be revealed by using the default **Object.prototype.toString(..)** method called against the value.
+Things to take into consideration:
 
-For example:
+1. class Foo implies creating a function of the name Foo.
+2. constructor(..) identifies the signature of that Foo(..) function, as well as its body contents.
+
+The class syntax definition is roughly thought of as the pre-ES6 equivalent:
 
 ```
-Object.prototype.call( [1,2,3] ); // "[object Array]"
+class Foo {
 
-Object.prototype.call( /regex-literal/i ); // "[object RegExp]"
+    constructor(a, b) {
+        this.x = a;
+        this.y = b;
+    }
+
+    Foo.prototype.gimmeXY = function() {
+        return this.x * this.y;
+    }
+
+}
 ```
 
-If you have a simple scalar primitive value like "abc" and you want to access its **length** property or some **String.prototype** method, JS automatically "boxes" the value (wraps it in its respective object wrapper) so that the property/method accesses can be fulfilled.
+In both cases, this "class" can now be instantiated:
+
+```
+var f = new Foo(5, 15);
+
+f.x; // 5
+f.y; // 15
+f.gimmeXY(); // 75
+```
+
+Cautions to take into account:
+
+1. A Foo(..) call of class Foo must be made with **new**.
+2. While function Foo is "hoisted", class Foo is not; the **extends** clause specifies an express that cannot be "hoisted". So, you must declare a **class** before you can instantiate it.
+
+### extends and super
+
+ES6 classes also have syntactic sugar for establishing the **[ [ Prototype ] ]** delegation link between two function prototypes using the class-oriented familiar terminology **extends**:
+
+```
+class Bar extends Foo {
+
+    constructor(a, b, c) {
+        super(a, b);
+        this.z = c;
+    }
+
+    gimmeXYZ() {
+        return super.gimmeXY() * this.z;
+    }
+
+}
+
+var b = new Bar(5, 15, 25);
+
+b.x; // 5
+b.y; // 15
+b.z; // 25
+b.gimmeXYZ(); // 1875
+```
+
+In the constructor, **super** automatically refers to the "parent constructor", which in the previous example is Foo(..). In a method, it refers to the "parent object", such that you can then make a property/method access off it, such as **super.gimmeXY()**.
+
+**Bar extends** means to link to the **[ [ Prototype ] ]** of **Bar.prototype** to **Foo.prototype**. So, super in a method like **gimmeXYZ()** specially means **Foo.prototype**, whereas **super** means Foo when used in the **Bar** constructor.
+
+### static
+
+It is quite useful to declare **static** methods (not just properties) for a class, as these are added directly to that class's function object, not to fhe function object's prototype object.
+
+Consider:
+
+```
+class Foo {
+    static cool() {
+        console.log("cool");
+    }
+
+    wow() {
+        console.log("wow");
+    }
+
+}
+
+class Bar extends Foo {
+    static awesome() {
+        super.cool();
+        console.log("awesome");
+    }
+
+    neat() {
+        super.wow();
+        console.log("neat");
+    }
+}
+
+Foo.cool(); // "cool"
+
+Bar.cool(); // "cool"
+
+Bar.awesome(); // "cool" "awesome"
+
+bar b = new Bar();
+b.neat(); // "wow" "neat"
+
+b.awesome; // undefined
+b.cool; // undefined
+```
