@@ -1,7 +1,7 @@
 ---
 path: '/post-fortyFive'
 date: '2019-09-01'
-time: '☕️ 2 min read'
+time: '☕️☕️☕️ 18 min read'
 title: 'JS #13: Coercion'
 summary: 'We take a look at Coercion.'
 ---
