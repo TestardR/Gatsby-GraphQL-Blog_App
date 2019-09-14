@@ -2,7 +2,7 @@
 path: '/post-fortySix'
 date: '2019-09-14'
 time: '☕️☕️ 10 min read'
-title: 'JS #14: Classes'
+title: 'JS #14: ES6 Classes'
 summary: 'We take a look at preES6 and ES6 Classes.'
 ---
 
