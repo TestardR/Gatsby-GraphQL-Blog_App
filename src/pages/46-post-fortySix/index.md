@@ -3,7 +3,7 @@ path: '/post-fortySix'
 date: '2019-09-16'
 time: '☕️☕️☕️ 17 min read'
 title: 'TS #1: TypeScript Object-Oriented Concepts'
-summary: 'Let's take look at the major aspect of TypeScript objects'
+summary: 'Lets take look at the major aspect of TypeScript objects'
 ---
 
 This article was done using my notes from Sean Maxwell, 2018, TypeScript Object-Oriented Concepts in a Nutshell.
