@@ -1,7 +1,7 @@
 ---
 path: '/post-forty-Six'
 date: '2019-09-16'
-time: '☕️☕️☕️ 17 min read'
+time: '☕️☕️☕️☕️ 23 min read'
 title: 'TS #1: TypeScript Object-Oriented Concepts'
 summary: 'Lets take look at the major aspect of TypeScript objects'
 ---
