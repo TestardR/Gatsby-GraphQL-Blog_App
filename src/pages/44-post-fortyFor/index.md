@@ -1,5 +1,5 @@
 ---
-path: '/post-fortyFive'
+path: '/post-fortyFor'
 date: '2019-09-01'
 time: '☕️☕️☕️ 18 min read'
 title: 'JS #13: Coercion'
