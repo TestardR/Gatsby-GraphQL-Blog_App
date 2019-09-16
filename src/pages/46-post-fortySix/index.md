@@ -1,5 +1,5 @@
 ---
-path: '/post-fortySix'
+path: '/post-forty-Six'
 date: '2019-09-16'
 time: '☕️☕️☕️ 17 min read'
 title: 'TS #1: TypeScript Object-Oriented Concepts'
