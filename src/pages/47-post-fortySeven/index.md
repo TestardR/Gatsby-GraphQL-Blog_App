@@ -1,7 +1,7 @@
 ---
 path: '/post-forty-Seven'
 date: '2019-09-17'
-time: '☕️☕️☕️☕️ 23 min read'
+time: '☕️☕️☕️☕️ 25 min read'
 title: 'JS #15: JavaScript Object Paradigm and Prototypes'
 summary: 'Lets take look at JavaScript Objects with Sean Maxwell'
 ---
