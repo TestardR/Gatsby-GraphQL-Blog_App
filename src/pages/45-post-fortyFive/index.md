@@ -3,7 +3,7 @@ path: '/post-forty-Five'
 date: '2019-09-14'
 time: '☕️☕️ 10 min read'
 title: 'JS #14: ES6 Classes'
-summary: 'We take a look at preES6 and ES6 Classes.'
+summary: 'We take a look at preES6 and ES6 Classes with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2016, ES6 & Beyond. It is a part of a very well written serie on Javascript that every developer should take a look at.

@@ -3,7 +3,7 @@ path: '/post-thirtySeven'
 date: '2019-08-24'
 time: '☕️ 2 min read'
 title: 'JS #5: Scope Closure'
-summary: 'We take a look at closures'
+summary: 'We take a look at closures with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, Scope and Closures. It is a part of a very well written serie on Javascript that every developer should take a look at.

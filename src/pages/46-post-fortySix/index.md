@@ -3,10 +3,10 @@ path: '/post-forty-Six'
 date: '2019-09-16'
 time: '☕️☕️☕️☕️ 23 min read'
 title: 'TS #1: TypeScript Object-Oriented Concepts'
-summary: 'Lets take look at the major aspect of TypeScript objects'
+summary: 'Lets take look at the major aspect of TypeScript objects with Sean Maxwell'
 ---
 
-This article was done using my notes from Sean Maxwell, 2018, TypeScript Object-Oriented Concepts in a Nutshell.
+This article was done using my notes from Sean Maxwell, 2018, "TypeScript Object-Oriented Concepts in a Nutshell".
 
 ## Object Overview
 
@@ -38,7 +38,7 @@ class Dog {
 let Spot = new Dog(2, 'Labrador')
 ```
 
-Equivalent using function-objects in pre-ES5:
+Equivalent using function-objects in pre-ES6:
 
 ```
 function Dog(age, breed) {

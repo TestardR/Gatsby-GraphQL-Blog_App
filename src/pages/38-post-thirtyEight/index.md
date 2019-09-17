@@ -3,7 +3,7 @@ path: '/post-thirtyEight'
 date: '2019-08-25'
 time: '☕️☕️ 6 min read'
 title: 'JS #6: the This keyword'
-summary: 'We take a look at the This keyword'
+summary: 'We take a look at the This keyword with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, This & Object prototypes. It is a part of a very well written serie on Javascript that every developer should take a look at.
@@ -14,7 +14,7 @@ This article was done using my notes from Kyles Simpson, 2014, This & Object pro
 
 ### The call-site
 
-Finding the call-site is generally "go locate where a function is called from", but it is not always easy, as certain coding patterns can obscure the true call-site. 
+Finding the call-site is generally "go locate where a function is called from", but it is not always easy, as certain coding patterns can obscure the true call-site.
 
 ### Four rules
 
@@ -42,7 +42,7 @@ var bar = object.foo();
 ```
 
 4. The function is called with undecorated function reference (default binding). If in **strict mode**, **this** is undefined, otherwise **this** references the global object.
-   
+
 ```
 var bar = foo();
 
@@ -72,4 +72,3 @@ var bar = foo.call( obj1 );
 
 bar; // 2;
 ```
-

@@ -3,7 +3,7 @@ path: '/post-thirtyNine'
 date: '2019-08-26'
 time: '☕️☕️ 5 min read'
 title: 'JS #7: Object'
-summary: 'We take a look at Objects'
+summary: 'We take a look at Objects with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, This & Object prototypes. It is a part of a very well written serie on Javascript that every developer should take a look at.

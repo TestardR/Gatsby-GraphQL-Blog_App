@@ -3,7 +3,7 @@ path: '/post-thirtyFour'
 date: '2019-08-21'
 time: '☕️ 2 min read'
 title: 'JS #2: Lexical Scope'
-summary: 'We take a look at how lexical scope works and how developers can cheat it.'
+summary: 'We take a look at how lexical scope works with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, Scope and Closures. It is a part of a very well written serie on Javascript that every developer should take a look at.

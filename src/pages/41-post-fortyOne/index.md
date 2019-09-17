@@ -3,7 +3,7 @@ path: '/post-fortyOne'
 date: '2019-08-28'
 time: '☕️ 3 min read'
 title: 'JS #9: Prototypes'
-summary: 'We take a look at Prototypes'
+summary: 'We take a look at Prototypes with Kyle Simpson'
 ---
 
 This article was done using my notes from Kyles Simpson, 2014, This & Object prototypes. It is a part of a very well written serie on Javascript that every developer should take a look at.
