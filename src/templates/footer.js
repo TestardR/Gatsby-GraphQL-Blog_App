@@ -19,7 +19,7 @@ const Footer = () => {
         style={{ color: 'green', float: 'right' }}
         href="https://github.com/TestardR"
       >
-        Follow me on GitHub
+        Meet me on GitHub
       </a>
       <Link style={{ color: 'green', textDecoration: 'none' }} to="/">
         Go Back
