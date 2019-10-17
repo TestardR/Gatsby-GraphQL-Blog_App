@@ -17,9 +17,9 @@ const Footer = () => {
     >
       <a
         style={{ color: 'green', float: 'right' }}
-        href="https://github.com/TestardR/WebSecurity-Article_Series"
+        href="https://github.com/TestardR"
       >
-        Edit on GitHub
+        Follow me on GitHub
       </a>
       <Link style={{ color: 'green', textDecoration: 'none' }} to="/">
         Go Back
