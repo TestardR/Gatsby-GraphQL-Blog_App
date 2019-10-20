@@ -2,7 +2,7 @@
 path: '/post-forty-Nine'
 date: '2019-10-17'
 time: '☕️ 8 min read'
-title: 'K8S #1: Core Concepts, Resources, and Controllers'
+title: 'K8S #1: Core Concepts'
 summary: 'Lets take look at Kubernetes and its core concepts with Joseph Heck'
 ---
 
