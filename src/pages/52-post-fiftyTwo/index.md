@@ -36,7 +36,7 @@ Date:   Sun Oct 20 19:34:19 2019 +0200
 
 ```
 
-As you can see, each of commits is allocated an ID. These IDs altogether are known as your history. You want to take good of your history. Making a mess of your history will create conflicts for others developers pulling from your repository.
+As you can see, each of commits is allocated an ID. These IDs altogether are known as your history. You want to take good care of your history. Making a mess of your history will create conflicts for others developers pulling from your repository.
 
 ## Cancel a commit before "push"
 
