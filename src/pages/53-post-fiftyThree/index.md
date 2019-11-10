@@ -34,7 +34,7 @@ The most recent stash made will be in the top of the list.
 
 ## Add what your forgot, cancel your previous commit, and commit the new work
 
-To add your new changes and add them to the following commit, use this command:
+To add your new changes and add them to your commit, use this command:
 
 ```
 git add -u
@@ -49,6 +49,9 @@ To apply the last work stashed, use the following command:
 
 ```
 git stash apply stash@{1}
+
+or
+
 git stash pop
 ```
 
