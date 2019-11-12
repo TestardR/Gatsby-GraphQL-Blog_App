@@ -2,9 +2,8 @@
 path: '/post-fiftyFour'
 date: '2019-11-12'
 time: '☕️☕️ 8 min read'
-title: 'Algo #13: Advanced reverse String
-'
-summary: 'Lets take a deep dive into reverse String with Scotch.io'
+title: 'Algo #13: Advanced reverse String'
+summary: 'Lets take a deep dive into reverse String with Philip Oboso'
 ---
 
 This article was done using my notes from Philip Oboso, 2019, String Reversal.
