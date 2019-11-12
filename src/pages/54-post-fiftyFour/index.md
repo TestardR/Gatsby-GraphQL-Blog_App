@@ -1,7 +1,7 @@
 ---
 path: '/post-fiftyFour'
-date: '2019-11-10'
-time: '☕️ 2 min read'
+date: '2019-11-12'
+time: '☕️☕️ 8 min read'
 title: 'Algo #13: Advanced reverse String
 '
 summary: 'Lets take a deep dive into reverse String with Scotch.io'
