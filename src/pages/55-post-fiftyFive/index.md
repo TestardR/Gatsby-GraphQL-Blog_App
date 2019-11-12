@@ -1,0 +1,47 @@
+---
+path: '/post-fiftyFour'
+date: '2019-11-12'
+time: '☕️ 4 min read'
+title: 'Algo #14: Advanced vowels count'
+summary: 'Lets take a deep dive into vowels count with Philip Oboso'
+---
+
+This article was done using my notes from Philip Oboso, 2019, String Reversal.
+
+## The Challenge
+
+Given a string of text, write an algorithm that returns the number of vowels.
+
+```
+vowelsCounter('algorithms') // should return 3
+```
+
+## An iterative approach
+
+```
+const vowels = ["a", "e", "i", "o", "u"];
+function vowelsCounter(str) {
+  let counter = 0;
+
+  for (char of str) {
+    if (vowels.includes(char)) {
+      counter++;
+    }
+  }
+  return counter;
+}
+```
+
+## Using Regular Expressions
+
+```
+function vowelsCounter(str) {
+  let match = str.match(/[aeiuo]/gi);
+
+  if (match) {
+    return match.length;
+  } else {
+    return 0;
+  }
+}
+```

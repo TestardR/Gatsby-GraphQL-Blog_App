@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftyFour'
-date: '2019-11-12'
+date: '2019-11-11'
 time: '☕️☕️ 8 min read'
 title: 'Algo #13: Advanced reverse String'
 summary: 'Lets take a deep dive into reverse String with Philip Oboso'
