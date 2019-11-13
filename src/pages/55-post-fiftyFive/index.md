@@ -1,8 +1,8 @@
 ---
-path: '/post-fiftyFour'
+path: '/post-fiftyFive'
 date: '2019-11-12'
 time: '☕️ 4 min read'
-title: 'Algo #14: Advanced vowels count'
+title: 'Algo #14: vowels count'
 summary: 'Lets take a deep dive into vowels count with Philip Oboso'
 ---
 
