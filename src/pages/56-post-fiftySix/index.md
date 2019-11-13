@@ -3,7 +3,7 @@ path: '/post-fiftySix'
 date: '2019-11-12'
 time: '☕️ 6 min read'
 title: 'Algo #15: Finding the most recurring character with charMap'
-summary: 'Lets take a deep dive into vowels count with Philip Oboso'
+summary: 'Lets take a deep dive into charMaps with Philip Oboso'
 ---
 
 This article was done using my notes from Philip Oboso, 2019, String Reversal.
