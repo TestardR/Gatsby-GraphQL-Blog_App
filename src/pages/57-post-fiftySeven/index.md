@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftySix'
-date: '2019-11-13'
+date: '2019-11-14'
 time: '☕️☕️ 8 min read'
 title: 'Algo #16: Sentence Capitalization'
 summary: 'Lets take a deep dive into forEach() and map() with Philip Oboso'
