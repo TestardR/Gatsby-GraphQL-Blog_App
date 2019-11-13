@@ -1,5 +1,5 @@
 ---
-path: '/post-fiftySix'
+path: '/post-fiftySeven'
 date: '2019-11-14'
 time: '☕️☕️ 8 min read'
 title: 'Algo #16: Sentence Capitalization'
