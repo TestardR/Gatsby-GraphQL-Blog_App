@@ -1,0 +1,67 @@
+---
+path: '/post-fiftyNine'
+date: '2019-11-08'
+time: '☕️ 6 min read'
+title: 'React #2: Use Error Boundaries'
+summary: '2nd of 8 useful tricks for React Apps with jsmanigest'
+---
+
+This article was done using my notes from jsmanifest, 2019, 8 Useful Tricks for React Apps You Should Know.
+
+## Use Error Boundaries
+
+n JavaScript, we are used to handling most errors inside the execution of code with try/catch, the block of code that can “catch” errors that occur.
+
+Here is a typical example:
+
+```
+function getFromLocalStorage(key, value) {
+  try {
+    const data = window.localStorage.get(key)
+    return JSON.parse(data)
+  } catch (error) {
+    console.error
+  }
+}
+```
+
+According to jsmanifest, "due to the nature of React, JavaScript errors inside components corrupt React’s internal state and cause it to emit cryptic errors on future renders.". As such, the React team introduced error boundaries.
+
+Error boundaries are React components that catch errors anywhere in the component tree, log them, and can display a fallback UI instead of the component tree that crashed.
+
+Here is an example from the React documentation. Sadly, it is still not offered as a functional component.
+
+```
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true }
+  }
+
+  componentDidCatch(error, errorInfo) {
+    // You can also log the error to an error reporting service
+    logErrorToMyService(error, errorInfo)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // You can render any custom fallback UI
+      return <h1>Something went wrong.</h1>
+    }
+    return this.props.children
+  }
+}
+```
+
+This should be used as a regular component:
+
+```
+<ErrorBoundary>
+  <MyComponent />
+</ErrorBoundary>
+```
