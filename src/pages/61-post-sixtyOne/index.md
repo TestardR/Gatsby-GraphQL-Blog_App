@@ -1,7 +1,7 @@
 ---
 path: '/post-sixtyOne'
 date: '2019-11-10'
-time: '☕️☕️ 9 min read'
+time: '☕️ 4 min read'
 title: 'React #3: Create react elements with Strings'
 summary: '3rd of 8 useful tricks for React Apps with jsmanigest'
 ---
