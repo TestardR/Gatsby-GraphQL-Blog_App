@@ -1,81 +1,68 @@
 ---
 path: '/post-fiftyEight'
-date: '2019-11-07'
-time: '☕️☕️ 9 min read'
-title: 'React #1: Create react elements with Strings'
-summary: '1st of 8 useful tricks for React Apps with jsmanigest'
+date: '2019-11-15'
+time: '☕️☕️ 8 min read'
+title: 'Algo #17: Palindrome checker'
+summary: 'Lets take a deep dive into forEach() and map() with Philip Oboso'
 ---
 
-This article was done using my notes from jsmanifest, 2019, 8 Useful Tricks for React Apps You Should Know.
+This article was done using my notes from Philip Oboso, 2019, Palindrome.
 
-## Create React Elements With Strings
+## The Challenge
 
-We can create a regular react DOM element with simple strings that represent an HTML DOM element tag.
-
-For example, you can create React components by assigning the string **div** to a variable.
+Given a string, write an algorithm that returns true if the given string is a palindrome.
 
 ```
-import React from 'react'
+palindromeChecker('level') // will return true
+```
 
-const FirstComponent = 'div'
+## Using reverse()
 
-function App() {
-  return (
-    <div>
-      <h1>Hello</h1>
-      <FirstComponent>
-        <h3>I am inside a {'<div />'} element</h3>
-      </FirstComponent>
-    </div>
-  )
+```
+function palindromeChecker(str) {
+    var reversedString = str.split('').reverse().join('')
+
+    return str === reversedString ? true : false
 }
 ```
 
-you can declare a **component** prop for which the caller can decide the root node of the component to become the value of **props.component**.
+or using ES6 spread operator
 
 ```
-function SecondComponent({ component: Component = 'div', name, age, email }) {
+function palindromeChecker(str) {
+    var reversedString = [...str].reverse().join('')
 
-  return (
-    <Component>
-      <h1>Hi {name}</h1>
-      <div>
-        <h6>You are {age} years old</h6>
-        <small>Your email is {email}</small>
-      </div>
-    </Component>
-  )
+    return str === reversedString ? true : false
 }
 ```
 
-This where you can pass your props:
+## Using every()
 
 ```
-function App() {
-  return (
-    <div>
-      <MyComponent component="div" name="Romain" age={16} email="Romain@gmail.com">
-    </div>
-  )
+function palindromeChecker(str) {
+    let charArray = [...str.toLowerCase()]
+
+    let result = charArray.every((letter, index) => {
+        return letter === charArray[charArray.length - index - 1]
+    })
+
+    return result
 }
 ```
 
-Finally, you can also pass in your custom component where that will be used as the root node:
+## Let's think about performance
+
+There is something wrong with the previous piece of code. We loop through the whole array instead of looping until the half of it. We need to stop looping once we have to check if the first half of the work matches the second half.
 
 ```
-function Dashboard({ children }) {
-  return (
-    <div style={{ padding: '25px 12px' }}>
-      {children}
-    </div>
-  )
-}
+function palindromeChecker(text) {
+    var textLen = text.length;
 
-function App() {
-  return (
-    <div>
-      <MyComponent component={Dashboard} name="Romain" age={16} email="Romain@gmail.com">
-    </div>
-  )
+    for (var i = 0; i < textLen/2; i++) {
+      if (text[i] !== text[textLen - 1 - i]) {
+          return false;
+      }
+    }
+    return true;
 }
 ```
