@@ -1,0 +1,67 @@
+---
+path: '/post-fiftyEight'
+date: '2019-11-15'
+time: '☕️☕️ 8 min read'
+title: 'Algo #17: Palindrome checker'
+summary: 'Lets take a deep dive into forEach() and map() with Philip Oboso'
+---
+
+This article was done using my notes from Philip Oboso, 2019, Palindrome.
+
+## The Challenge
+
+Given a string, write an algorithm that returns true if the given string is a palindrome.
+
+```
+palindromeChecker('level') // will return true 
+```
+
+## Using reverse()
+
+```
+function palindromeChecker(str) {
+    var reversedString = str.split('').reverse().join('')
+
+    return str === reversedString ? true : false
+}
+```
+or using ES6 spread operator
+
+```
+function palindromeChecker(str) {
+    var reversedString = [...str].reverse().join('')
+
+    return str === reversedString ? true : false
+}
+```
+
+## Using every()
+
+```
+function palindromeChecker(str) { 
+    let charArray = [...str.toLowerCase()]
+    
+    let result = charArray.every((letter, index) => {
+        return letter === charArray[charArray.length - index - 1]
+    })
+
+    return result
+}
+```
+
+## Let's think about performance
+
+There is something wrong with the previous piece of code. We loop through the whole array instead of looping until the half of it. We need to stop looping once we have to check if the first half of the work matches the second half.
+
+```
+function palindromeChecker(text) {
+    var textLen = text.length;
+    
+    for (var i = 0; i < textLen/2; i++) {
+      if (text[i] !== text[textLen - 1 - i]) {
+          return false;
+      }
+    }
+    return true;
+}
+```
