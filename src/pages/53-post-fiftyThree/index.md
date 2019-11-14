@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftyThree'
-date: '2019-11-10'
+date: '2019-11-02'
 time: '☕️ 2 min read'
 title: 'Git #2: Back to a commit without losing work with "stash"
 '

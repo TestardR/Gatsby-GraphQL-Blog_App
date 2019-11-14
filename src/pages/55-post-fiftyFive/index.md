@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftyFive'
-date: '2019-11-12'
+date: '2019-11-04'
 time: '☕️ 4 min read'
 title: 'Algo #14: vowels count'
 summary: 'Lets take a deep dive into vowels count with Philip Oboso'

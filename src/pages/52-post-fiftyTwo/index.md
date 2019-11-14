@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftyTwo'
-date: '2019-11-09'
+date: '2019-11-01'
 time: '☕️ 3 min read'
 title: 'Git #1: Cancel a commit before / after "push"'
 summary: 'Lets take a look at how to deal with unwanted commits'
