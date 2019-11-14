@@ -2,8 +2,8 @@
 path: '/post-sixty'
 date: '2019-11-09'
 time: '☕️ 5 min read'
-title: 'React #3: Retain Previous Values with useRef'
-summary: '3rd of 8 useful tricks for React Apps with jsmanigest'
+title: 'React #2: Retain Previous Values with useRef'
+summary: '2nd of 8 useful tricks for React Apps with jsmanigest'
 ---
 
 This article was done using my notes from jsmanifest, 2019, 8 Useful Tricks for React Apps You Should Know.

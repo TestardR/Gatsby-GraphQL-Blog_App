@@ -1,6 +1,6 @@
 ---
 path: '/post-fiftyEight'
-date: '2019-11-15'
+date: '2019-11-07'
 time: '☕️☕️ 8 min read'
 title: 'Algo #17: Palindrome checker'
 summary: 'Lets take a deep dive into forEach() and map() with Philip Oboso'
