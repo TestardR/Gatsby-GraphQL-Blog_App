@@ -10,7 +10,7 @@ This article was done using my notes from jsmanifest, 2019, 8 Useful Tricks for 
 
 ## Use Error Boundaries
 
-n JavaScript, we are used to handling most errors inside the execution of code with try/catch, the block of code that can “catch” errors that occur.
+In JavaScript, we are used to handling most errors inside the execution of code with try/catch, the block of code that can “catch” errors that occur.
 
 Here is a typical example:
 
