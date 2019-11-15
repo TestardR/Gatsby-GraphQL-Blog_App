@@ -1,7 +1,7 @@
 ---
 path: '/post-sixtyTwo'
 date: '2019-11-11'
-time: '☕️ 4 min read'
+time: '☕️ 2 min read'
 title: 'React #4: Use useRef for flexible non-stale value checks'
 summary: '3rd of 8 useful tricks for React Apps with jsmanigest'
 ---
