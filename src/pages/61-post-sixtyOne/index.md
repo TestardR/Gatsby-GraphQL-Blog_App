@@ -3,10 +3,10 @@ path: '/post-sixtyOne'
 date: '2019-11-10'
 time: '☕️ 4 min read'
 title: 'React #3: Create react elements with Strings'
-summary: '3rd of 8 useful tricks for React Apps with jsmanigest'
+summary: '3rd of 8 useful tricks for React Apps with Christopher T.'
 ---
 
-This article was done using my notes from jsmanifest, 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).
+This article was done using my notes from Christopher T., 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).
 
 ## Create React Elements With Strings
 
