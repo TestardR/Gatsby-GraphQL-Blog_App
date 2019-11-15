@@ -1,7 +1,7 @@
 ---
 path: '/post-sixtyThree'
 date: '2019-11-12'
-time: '☕️ 2 min read'
+time: '☕️ 6 min read'
 title: 'React #5: Use useRef for customizing elements that depend on other elements'
 summary: 'Use useRef to get access to DOM elements with Christopher T. '
 ---
