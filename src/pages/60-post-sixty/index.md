@@ -6,7 +6,7 @@ title: 'React #2: Retain Previous Values with useRef'
 summary: '2nd of 8 useful tricks for React Apps with jsmanigest'
 ---
 
-This article was done using my notes from jsmanifest, 2019, 8 Useful Tricks for React Apps You Should Know.
+This article was done using my notes from jsmanifest, 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).
 
 ## Retain Previous Values
 
