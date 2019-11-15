@@ -3,7 +3,7 @@ path: '/post-sixty'
 date: '2019-11-09'
 time: '☕️ 5 min read'
 title: 'React #2: Retain Previous Values with useRef'
-summary: '2nd of 8 useful tricks for React Apps with Christopher T.'
+summary: 'Use useRef to save the previous state value with Christopher T.'
 ---
 
 This article was done using my notes from Christopher T., 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).

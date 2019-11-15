@@ -3,7 +3,7 @@ path: '/post-fiftyNine'
 date: '2019-11-08'
 time: '☕️ 6 min read'
 title: 'React #1: Use Error Boundaries'
-summary: '1st of 8 useful tricks for React Apps with Christopher T.'
+summary: 'Use Error Boundaries to get error feedbacks with Chirstopher T.'
 ---
 
 This article was done using my notes from Christopher T., 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).

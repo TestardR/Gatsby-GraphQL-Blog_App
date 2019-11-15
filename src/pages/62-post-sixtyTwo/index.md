@@ -3,7 +3,7 @@ path: '/post-sixtyTwo'
 date: '2019-11-11'
 time: '☕️ 2 min read'
 title: 'React #4: Use useRef for flexible non-stale value checks'
-summary: '4th of 8 useful tricks for React Apps with Christopher T.'
+summary: 'Use useRef to implement checking tags with Christopher T.'
 ---
 
 This article was done using my notes from Christopher T., 2019, [8 Useful Tricks for React Apps You Should Know](https://jsmanifest.com/8-useful-tricks-in-react-you-should-know/).
