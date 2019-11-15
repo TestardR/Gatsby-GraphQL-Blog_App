@@ -1,7 +1,7 @@
 ---
 path: '/post-sixtyTwo'
 date: '2019-11-11'
-time: '☕️ 2 min read'
+time: '☕️ 4 min read'
 title: 'React #4: Use useRef for flexible non-stale value checks'
 summary: 'Use useRef to implement checking tags with Christopher T.'
 ---
