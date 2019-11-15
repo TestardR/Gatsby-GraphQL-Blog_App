@@ -3,7 +3,7 @@ path: '/post-fiftyOne'
 date: '2019-10-21'
 time: '☕️ 2 min read'
 title: 'K8S #3: Declaring a simple app'
-summary: 'Lets take a look at how to declare a simple application'
+summary: 'Lets take a look at how to declare a simple application with Joseph Heck'
 ---
 
 This article was done using my notes from Joseph Heck, 2018, Kubernetes for Developers, Packt.
