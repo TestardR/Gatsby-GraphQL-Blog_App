@@ -1,7 +1,7 @@
 ---
 path: '/post-sixtyFour'
 date: '2019-11-13'
-time: '☕️ 6 min read'
+time: '☕️ 4 min read'
 title: 'React #6: Use Higher-Order Components'
 summary: 'Use HOC to create create powerful reusable functions '
 ---
