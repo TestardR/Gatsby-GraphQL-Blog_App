@@ -6,7 +6,7 @@ title: 'React #7: Use Custom Hooks'
 summary: 'Use Custom Hooks to create create powerful reusable functions '
 ---
 
-This article was done using my notes from Roy Derks, 2019, From Higher-Order Components (HOC) to React Hooks](https://dev.to/gethackteam/from-higher-order-components-hoc-to-react-hooks-2bm9).
+This article was done using my notes from Roy Derks, 2019, [From Higher-Order Components (HOC) to React Hooks](https://dev.to/gethackteam/from-higher-order-components-hoc-to-react-hooks-2bm9).
 
 ## Custom Hooks: Building Your Own Hooks
 
