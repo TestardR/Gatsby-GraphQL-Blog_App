@@ -2,7 +2,7 @@
 path: '/post-sixtySeven'
 date: '2019-11-16'
 time: '☕️☕️ 8 min read'
-title: 'Algo #18: Longest Word'
+title: 'Algo #19: Longest Word'
 summary: 'Find the longest word in a sentence using reduce or sort with Philip Oboso'
 ---
 
