@@ -54,4 +54,4 @@ export default useDataFetching;
 
 ```
 
-This custom hook useDataFetching() awaits for a **dataSource** as parameter. We could use any API url to do so. useDataFetching() returns 3 elements that we will use in the component useDataFetching() is called from. It returns **error**, **loading**, and **result**.
+This custom hook useDataFetching() awaits for a **dataSource** as parameter. We could use any API url to do so. useDataFetching() returns 3 elements that we will use in the component useDataFetching() is called from. It returns **error**, **loading**, and **results**.
