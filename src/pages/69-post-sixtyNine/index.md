@@ -3,7 +3,7 @@ path: '/post-sixtyNine'
 date: '2019-11-21'
 time: '☕️ 2 min read'
 title: 'React #8: What is React and what are its major features ?'
-summary: 'Lets take a quick dive into React fundamental knowledge with Sudheer Jonna'
+summary: 'React can simply described a an open-source library Sudheer Jonna'
 ---
 
 This article was done using my notes from Sudheer Jonna, 2020, [React Interview Questions & Answers](https://github.com/sudheerj/reactjs-interview-questions#what-is-react).

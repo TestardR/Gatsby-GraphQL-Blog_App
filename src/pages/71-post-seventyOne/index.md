@@ -3,7 +3,7 @@ path: '/post-seventy'
 date: '2019-11-23'
 time: '☕️ 6 min read'
 title: 'React #10: What is the difference between Element and Component'
-summary: 'Lets take a quick dive into React fundamental knowledge with Sudheer Jonna'
+summary: 'Elements as plain objects with Sudheer Jonna'
 ---
 
 This article was done using my notes from Sudheer Jonna, 2020, [React Interview Questions & Answers](https://github.com/sudheerj/reactjs-interview-questions#what-is-react).
