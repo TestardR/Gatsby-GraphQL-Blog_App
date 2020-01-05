@@ -1,6 +1,6 @@
 ---
 path: '/post-seventy'
-date: '2019-11-22'
+date: '2019-11-23'
 time: '☕️ 6 min read'
 title: 'React #10: What is the difference between Element and Component'
 summary: 'Lets take a quick dive into React fundamental knowledge with Sudheer Jonna'
@@ -47,4 +47,14 @@ Whereas a component can be declared in several different ways. It can be a class
 ```
 const Button = ({ onLogin }) =>
   <div id={'login-btn'} onClick={onLogin}>Login</div>
+```
+
+Then JSX gets transpiled to a React.createElement() function tree:
+
+```
+const Button = ({ onLogin }) => React.createElement(
+  'div',
+  { id: 'login-btn', onClick: onLogin },
+  'Login'
+)
 ```
