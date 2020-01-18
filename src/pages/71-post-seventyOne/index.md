@@ -1,5 +1,5 @@
 ---
-path: '/post-seventy'
+path: '/post-seventy-one'
 date: '2019-11-23'
 time: '☕️ 6 min read'
 title: 'React #10: What is the difference between Element and Component'

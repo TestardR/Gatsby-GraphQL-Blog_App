@@ -1,5 +1,5 @@
 ---
-path: '/post-seventy'
+path: '/post-seventy-two'
 date: '2019-11-24'
 time: '☕️ 4 min read'
 title: 'React #11: What is a Pure Component and a memo function'
