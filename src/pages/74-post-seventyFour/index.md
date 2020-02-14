@@ -1,7 +1,7 @@
 ---
 path: '/post-seventy-four'
 date: '2020-02-11'
-time: '☕️☕️ 5 min read'
+time: '☕️ 3 min read'
 title: 'Go #1: Concurrency with Goroutines'
 summary: "Let's take a look at what is known as concurrent code and distinguish it from sequential code using Golang"
 ---

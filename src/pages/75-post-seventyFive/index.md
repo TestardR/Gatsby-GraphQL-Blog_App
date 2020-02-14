@@ -1,7 +1,7 @@
 ---
 path: '/post-seventy-five'
 date: '2020-02-14'
-time: '☕️☕️ 5 min read'
+time: '☕️ 5 min read'
 title: 'Go #2: Concurrency with Channels'
 summary: "Let's take a look at what are channels and how they are used with Goroutines. All this with the help of Caleb Doxsey and Mark McGanaghan"
 ---
