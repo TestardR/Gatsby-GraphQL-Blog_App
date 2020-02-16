@@ -21,9 +21,11 @@ How would compare algorithms ? How would you now which one is better ? And so, w
 
 Comparing algorithms, the "better" has to be understood in termes of space and memory. We can objectively compare algorithms through the amount of space they take in memory or we can also compare how much time it takes for each function to run. To make it short, the best algorithm would be the most effecient in terms of space and memory. The one taking the least time and the least memory.
 
+In the case of space, we would speak of space complexity. In the case of memory, we would speak of time complexity.
+
 To do so, we make use of the Big-O notation.
 
-## Big-O Notation
+## Big-O Notation for time complexity
 
 Big-O notation describes how quickly runtime will grow relative to the input as the input get arbitrarily large. 
 
@@ -47,7 +49,7 @@ Using Big-O notation, we want:
 | n^3           | Cubic         |
 | 2^n           | Exponential   |
 
-### Big-Os to remember
+### Big-Os to remember for time complexity
 
 **O(1)** is Constant, to be found in functions without loops.
 
